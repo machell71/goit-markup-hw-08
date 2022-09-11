@@ -3,7 +3,8 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    max-width: 370px;
+    max-width: 450px;
+    // height: 136px ;
   }
   
   .filter-title {
@@ -21,7 +22,13 @@
     color: var(--text-color);
   }
   .filter-item {
-    width: calc((100% - 60px) / 3);
+    width: 450px;
+    @media screen and (min-width: 768px){
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px){
+      width: calc((100% - 60px) / 3);
+    }
     cursor: pointer;
 
     &:hover,
@@ -40,6 +47,7 @@
   .project-wrap {
     position: relative;
     overflow: hidden;
+    width: 450px;
   }
 
   
@@ -54,7 +62,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 370px;
+    // width: 370px;
     height: 295px;
     padding: 63px 24px;
     transform: translateY(100%);

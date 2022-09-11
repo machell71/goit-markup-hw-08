@@ -1,3 +1,20 @@
+@media screen and (min-width: 768px){
+  .div{
+    display: flex;
+    gap: 165px;
+    margin-left: 76px;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .div{
+    margin: 0;
+    gap: 70px;
+  }
+}
+
+
 .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -9,6 +26,11 @@
   
     margin-bottom: 20px;
     display: block;
+   text-align: center;
+   @media screen and (min-width: 1200px){
+  text-align: left;
+  }
+   
   }
   .web-footer {
     color: var(--main-color);
@@ -26,8 +48,13 @@
     letter-spacing: 0.03em;
     color: var(--main-color);
     text-decoration: none;
+    
   }
   .address {
+    text-align: center;
+    @media screen and (min-width: 1200px){
+      text-align: left;
+      }
   }
   
   .address-list .link {
@@ -38,8 +65,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   
-    margin-top: 9px;
-    display: block;
+    margin-top: 8px;
+   
   }
   
   .footer-title {
@@ -50,9 +77,19 @@
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px){
+    .footer-title{
+     text-align: left;
+    }
   }
   .footer-list-svg {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     gap: 10px;
   }
   .footer-link {
@@ -76,24 +113,51 @@
   }
 
   .footer-conteiner {
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
-  .div-address{
-   margin-right: 70px; 
+  @media screen and (min-width: 1200px){
+    .footer-conteiner{
+      display: flex;
+    }
+  }
+
+  .div-address{  
+    min-width: 232px;
   }
   .div-svg{
-    margin-right: 93px;
+
   }
+  
+  @media screen and (min-width: 1200px){
+    .div-svg{
+      margin-right: 93px;
+    }
+  }
+
+
   .foter-forma{
   
   }
   .footer-forma-form{
-    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
   }
+
+  @media screen and (min-width: 1200px){
+    .footer-forma-form{
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+  }
+
   .input-footer-forma{
     margin-right: 12px;
-    width: 358px;
+    // 
+    width: 450px;
     height: 50px;
     background-color:transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -105,6 +169,14 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     padding-left: 16px;
+    
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    @media screen and (min-width: 1200px){
+      width: 358px;
+    }
 
     &::placeholder{
       font-weight: 400;
@@ -119,6 +191,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   margin: 0 auto;
 
    &:hover,
    &:focus{

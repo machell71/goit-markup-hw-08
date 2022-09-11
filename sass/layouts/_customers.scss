@@ -1,14 +1,17 @@
 .customers {
-    padding: 94px 0;
     background-color: var(--main-color);
   }
   .customers__title{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+    }
   }
   .customers__list {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
   .customers__link {
     display: flex;

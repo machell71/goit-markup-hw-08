@@ -4,24 +4,33 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero.jpg);
-    padding: 200px 0;
+    padding: 118px 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-width: 1600px;
     margin: 0 auto;
+    @media screen and (min-width: 1200px){
+      width: 100%;
+      padding: 200px 0;
+    }
   }
   .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--main-color);
   
-    max-width: 696px;
+    max-width: 360px;
+    
     margin: 0 auto;
+    @media screen and (min-width: 1200px){
+      max-width: 696px;
+      line-height: 1.36;
+      font-size: 44px;
+    }
   }
   
   .hero__btn {
