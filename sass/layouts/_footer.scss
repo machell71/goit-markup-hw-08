@@ -1,0 +1,132 @@
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+  
+    margin-bottom: 20px;
+    display: block;
+  }
+  .web-footer {
+    color: var(--main-color);
+  }
+  .footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+  }
+  
+  .locations {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  .address {
+  }
+  
+  .address-list .link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  
+    margin-top: 9px;
+    display: block;
+  }
+  
+  .footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+  }
+  .footer-list-svg {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-color);
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .footer-conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+  .div-address{
+   margin-right: 70px; 
+  }
+  .div-svg{
+    margin-right: 93px;
+  }
+  .foter-forma{
+  
+  }
+  .footer-forma-form{
+    display: flex;
+  }
+  .input-footer-forma{
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    background-color:transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--main-color);
+  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+
+    &::placeholder{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+     }
+  }
+
+  .button-footer-forma{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &:hover,
+   &:focus{
+     color:black ;
+   }
+  }
+
+  .icon-form{
+   margin-left: 10px;
+   fill:currentColor
+  }

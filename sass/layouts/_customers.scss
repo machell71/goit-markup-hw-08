@@ -1,0 +1,31 @@
+.customers {
+    padding: 94px 0;
+    background-color: var(--main-color);
+  }
+  .customers__title{
+    margin-bottom: 50px;
+  }
+  .customers__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .customers__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+  
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }

@@ -1,0 +1,91 @@
+.heder {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+  }
+  .heder__container {
+    display: flex;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  .heder__logo{
+    margin-right: 93px;
+  }
+  .heder__web {
+    color: var(--title-tex-color);
+  }
+  .navigation__list {
+    display: flex;
+    column-gap: 50px;
+  }
+  .navigation__item {
+    position: relative;
+  }
+  
+  .navigation__link--current-studio.current::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 0px;
+    top: 47px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+  .navigation__link--current-studio.current{
+    color: var(--accent-color);
+  }
+  .navigation__link--current-portfolio.current::after {
+    content: "";
+    position: absolute;
+    width: 77px;
+    height: 4px;
+    left: 0px;
+    top: 47px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+  .navigation__link--current-portfolio.current{
+    color: var(--accent-color);
+  }
+  .navigation__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-tex-color);
+  }
+  .connection {
+    display: flex;
+    margin-left: auto;
+  }
+  .connection__link {
+    display: flex;
+    gap: 10px;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
+  .connection-tel{
+    margin-left: 50px;
+  }
+  .connection__icon {
+    fill: currentColor;
+    align-items: center;
+    justify-content: center;
+  }
