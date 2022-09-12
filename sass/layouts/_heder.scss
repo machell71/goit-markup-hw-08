@@ -31,6 +31,7 @@
     column-gap: 50px;
   }
   .navigation__item {
+    display: none;
     position: relative;
   }
   
@@ -68,10 +69,15 @@
     color: var(--title-tex-color);
   }
   .connection {
+    display: none;
     display: flex;
     margin-left: auto;
   }
+  .connection__item{
+    display: none;
+  }
   .connection__link {
+    display: none;
     display: flex;
     gap: 10px;
   
@@ -85,7 +91,26 @@
     margin-left: 50px;
   }
   .connection__icon {
+    display: none;
     fill: currentColor;
     align-items: center;
     justify-content: center;
+  }
+
+
+  .menu-open-button{
+    background-color: #ffffff;
+    border: none;
+    margin-left: auto;
+    &:hover .menu-icon{
+      fill: var(--accent-color);
+    }
+  }
+  .menu-icon{
+
+  }
+
+  .menu-close-button{
+    background-color: var(--main-color);
+    border: none;
   }
