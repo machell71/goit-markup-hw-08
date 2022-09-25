@@ -5,6 +5,10 @@
     border-right: 1px solid #eeeeee;
     // max-width: 450px;
     // height: 136px ;
+    // flex-grow: 1;
+  }
+  .div-portfolio-one{
+    flex-grow: 1;
   }
   
   .filter-title {
@@ -22,7 +26,8 @@
     color: var(--text-color);
   }
   .filter-item {
-    // width: 450px;
+    display: flex;
+    flex-direction: column;
     @media screen and (min-width: 768px){
       width: calc((100% - 30px) / 2);
     }
@@ -47,7 +52,6 @@
   .project-wrap {
     position: relative;
     overflow: hidden;
-    // width: 450px;
   }
 
   
